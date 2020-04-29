@@ -1,19 +1,11 @@
 /**
- * Get a variant of a/b testing.
- * data: {
- * 	'testName': string,
- * 	'groups': [
- * 		{
- * 			"name": string,
- * 			"weight": number
- * 		}, ...
- * 	]
- * }
+ * Choose a variant from a test
+ * 
  * @param {string} data.testName This name has to be unique across all the tests
  * @param {Array.<{name: string, weight: number}>} data.variants The names and weights of the variants
+ * @return {string, string} The name of the test and the variant which has been chosen
  */
-function getVariant = async data => {
-	return handleInterfaceFunction(domainCode, path, 'getVariant', data, async () => {
+function getVariant(data) {
 		const { testName, variants } = data;
 		// console.log(`testName: ${testName}, variants: ${JSON.stringify(variants)}`);
 
@@ -29,7 +21,6 @@ function getVariant = async data => {
 
 		const variant = bucket[hashResult % bucket.length];
 		return { testName, variant };
-	});
 };
 
 /**
