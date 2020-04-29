@@ -1,0 +1,23 @@
+{
+  "name": "ab-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Doge-is-Dope/ab-testing.git"
+  },
+  "keywords": [
+    "ab",
+    "testing"
+  ],
+  "author": "Chun-Chieh Liang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Doge-is-Dope/ab-testing/issues"
+  },
+  "homepage": "https://github.com/Doge-is-Dope/ab-testing#readme"
+}
