@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Doge-is-Dope/ab-testing.git"
   },
   "keywords": [
-    "ab",
     "testing"
   ],
   "author": "Chun-Chieh Liang",
@@ -19,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Doge-is-Dope/ab-testing/issues"
   },
-  "homepage": "https://github.com/Doge-is-Dope/ab-testing#readme"
+  "homepage": "https://github.com/Doge-is-Dope/ab-testing#readme",
+  "devDependencies": {
+    "jest": "^25.5.1"
+  }
 }
